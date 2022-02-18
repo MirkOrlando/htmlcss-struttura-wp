@@ -8,10 +8,34 @@
 
 body {
     width: 1200px;
+    margin: 0 auto;
 }
 
 /* #site-header */
 
+#site-header {
+    height: 150px;
+}
+
+.container.logo {
+    background-color: lightsalmon;
+    height: 100px;
+}
+
+#header-nav {
+    background-color: lightgoldenrodyellow;
+    height: 50px;
+}
+
 /* #site-main */
 
+#site-main {
+    background-color: aquamarine;
+}
+
 /* #site-footer */
+
+#site-footer {
+    background-color: lightslategray;
+    height: 75px;
+}
