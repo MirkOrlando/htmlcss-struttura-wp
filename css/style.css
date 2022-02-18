@@ -4,6 +4,12 @@
     position: relative;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* common */
 
 * {
@@ -20,8 +26,7 @@ body {
 /* #site-header */
 
 #site-header {
-    height: 150px;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem;
 }
 
 .container.logo {
@@ -37,22 +42,50 @@ body {
 /* #site-main */
 
 #site-main {
-    background-color: aquamarine;
+    background-color: aliceblue;
+    margin: 0 0 2rem;
 }
 
-.container.image {
+main > .container.image {
     background-color: cadetblue;
     height: 500px;
+    margin: 0 0 2rem;
 }
 
 .container.description {
-    background-color: lightgoldenrodyellow;
+    background-color: darkkhaki;
     height: 100px;
     width: 600px;
     position: absolute;
     left: 2.5rem;
     bottom: 4.5rem;
-    
+}
+
+.content.title {
+    background-color: crimson;
+    height: 80px;
+    margin: 0 0 2rem;
+}
+
+.column {
+    background-color: coral;
+    width: 23%;
+}
+
+.central {
+    background-color: coral;
+    width: 50%;
+    margin: 0 2%;
+}
+
+.column, .central {
+    height: 550px;
+    float: left;
+}
+
+.column > .container.image, .central > .container.image {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 235px;
 }
 
 /* #site-footer */
