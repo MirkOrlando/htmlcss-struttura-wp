@@ -1,3 +1,9 @@
+/* utility */
+
+.relative {
+    position: relative;
+}
+
 /* common */
 
 * {
@@ -15,6 +21,7 @@ body {
 
 #site-header {
     height: 150px;
+    margin-bottom: 2rem;
 }
 
 .container.logo {
@@ -23,7 +30,7 @@ body {
 }
 
 #header-nav {
-    background-color: lightgoldenrodyellow;
+    background-color: gold;
     height: 50px;
 }
 
@@ -31,6 +38,21 @@ body {
 
 #site-main {
     background-color: aquamarine;
+}
+
+.container.image {
+    background-color: cadetblue;
+    height: 500px;
+}
+
+.container.description {
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+    width: 600px;
+    position: absolute;
+    left: 2.5rem;
+    bottom: 4.5rem;
+    
 }
 
 /* #site-footer */
